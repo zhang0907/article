@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    //return 返回值 结束运行  函数中 不写return时默认返回undefined
+
+    var ary =  [1,2,3,4];
+    //ary[4] = 5;
+    //给数组的末尾添加项
+    //ary.push(5);
+    //n = 改变后数组的长度
+    var n =  ary.push(5,6,7);
+    console.log(n,ary);
+    //pop 删除最后一项
+    var item = ary.pop();
+    console.log(item,ary);
+
+    var n = ary.unshift(100);//首项添加一项  shift为删除首项
+    console.log(n,ary);
+
+    //排序
+    ary = [12,45,66,7655,8979,9];
+    ary.sort
+    (
+        function(a,b)
+        {
+            return a-b;//返回值a-b为升序  b-a为降序
+        }
+    )
+    //sort 返回结果为排好序之后的数组
+
+    //reverse 数组的翻转 返回结果和原数组为一个地址
+
+    //forEach 和sort用法相同 用来循环数组
+    ary.forEach
+    (
+        function(item,index)
+        {
+            //item 循环的数组中的每一项  index 循环的索引
+        }
+    );
+
+    //过滤  返回值为符合过滤条件的值组成的新数组
+    var ary = [10,20,30,40];
+    var ary2 = ary.filter
+    (
+        function(item,index)
+        {
+            return item > 20;
+        }
+    )
+
+    //_proto_ 查看数组的方法
+
+    //变量声明
+    //var申请的变量会在window调用  let不能重名只能申请一次不在window下 const不能重复声明不能更改值
+</script>

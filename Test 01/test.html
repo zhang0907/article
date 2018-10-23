@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .div
+        {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background: -webkit-linear-gradient(top right,pink,red);
+            border-radius: 50%;
+            box-shadow: 3px 3px 3px 3px #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <span>
+        石家庄职业技术学院
+    </span>
+    <div class="div">
+        石家庄职业技术学院
+    </div>
+    <div>
+        前端培优班
+    </div>
+    <button onclick="touchdown()">1</button>
+    <button onclick="touchdown()">2</button>
+    <button onclick="touchdown()">3</button>
+    <button onclick="touchdown()">4</button>
+</body>
+</html>
+<script>
+
+    var bto =  document.getElementsByTagName('button');
+    //第一种
+    for(var i = 0; i < 4; i++)
+    {
+        bto[i].onclick = function()
+        {
+            alert(this.innerHTML);
+        }
+    }
+    //第二种
+    //bto[0].onclick = function()
+    //{
+    //    alert(1);
+    //}
+    //bto[1].onclick = function()
+    //{
+    //    alert(2);
+    //}
+    //bto[2].onclick = function()
+    //{
+    //    alert(3);
+    //}
+    //bto[3].onclick = function()
+    //{
+    //    alert(4);
+    //}
+
+    // var str = "1433223";
+    // console.log(Number(str));
+    // console.log(parseInt(str));
+
+    // function sum(a,b,c)
+    // {
+    //     var total = 0;//存储计算出来的和
+    //     for(var i = 0;i < arguments.length;i++)
+    //     {
+    //         console.log(arguments[i]);
+    //         total = arguments[i];//实参集合
+    //     }
+
+    //     return total;
+    // }
+
+    // var s = sum(1,2,3,4,5);
+    // console.log(s);
+
+    //Boolean类型中 0 “” nan null undefined 全为false
+
+    //var a = 1 || 2 ;
+    //var b = 1 && 2 ;
+
+    //对于&& 前面成立给后面 
+    //对于|| 前面成立给前面 
+    //== 相对比较 两边数据转换成同一种在比较
+    //=== 绝对比较 先看两边是不是同一种数据类型 不是 即直接false 是 则再去比较两边是否相等
+    //'0' != 1
+    //'0' !== 1
+
+    //js基本数据类型
+    //string number Boolean null undefined
+    //引用数据类型
+    //[] {} function data math 正则
+    //引用数据类型操作的都是一个值 引用数据类型操作的是一个地址
+
+    //var name = '123' , age = 9;
+    //console.log('我的名字是'+name+'我的年龄是'+age);
+    //var str = `我的名字是${name}我的年龄是${age}`;
+    //var str2 = `123\'asd`;
+    //console.log(str2);
+    //若想要用单引号包含单引号，我们需要用\把字符串中的单引号转义
+
+    //var str3 = '123石家庄';
+    //str3.replace('123','石家庄');
+    //console.log(str3);
+    //替换
+
+    //isNaN()
+    //判断参数是否为nan
+
+    //null == undefined 为true
+    //null === undefined 为false
+
+    //typeof() 查看数据类型  两个以上typeof 返回结果为字符串
+
+    //对象中获取属性的值的两种方法 一种是打点，一种是[],中括号的这种方式一般适用于属性值是通过变量获取的情况
+   
+    //for in 循环
+    //var ary = [1,2,3,4,5];
+    //var obj = {name:'123',age:9};
+    //for(var k in obj)
+    //{
+        //k 对象的属性名
+        //console.log(obj[k]);
+    //}
+   
+</script>
